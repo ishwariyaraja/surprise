@@ -6,7 +6,7 @@
 // false = real birthday
 //
 
-const TEST_MODE = true;
+const TEST_MODE = false;
 
 
 // =========================================
