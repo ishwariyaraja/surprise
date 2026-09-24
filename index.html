@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Birthday Surprise💛</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================================= -->
+    <!-- BACKGROUND MUSIC -->
+    <!-- ================================= -->
+
+    <audio id="bgMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!-- ================================= -->
+    <!-- START SCREEN -->
+    <!-- ================================= -->
+
+    <section id="startScreen" class="screen">
+
+        <!-- Floating Images -->
+
+        <div class="floating-images">
+
+            <img src="image/photo1.png" class="float-img img1">
+            <img src="image/photo2.png" class="float-img img2">
+            <img src="image/photo3.png" class="float-img img3">
+            <img src="image/photo4.png" class="float-img img4">
+            <img src="image/photo3.png" class="float-img img5">
+            <img src="image/photo2.png" class="float-img img6">
+
+        </div>
+
+
+        <!-- Floating Hearts -->
+
+        <div class="hearts">
+
+            <span>💛</span>
+            <span>✨</span>
+            <span>💛</span>
+            <span>🌼</span>
+            <span>💫</span>
+            <span>🤍</span>
+
+        </div>
+
+
+        <div class="start-box">
+
+            <div class="small-text">
+                ✨ A little surprise for you ✨
+            </div>
+
+            <h1>
+                Something Special
+            </h1>
+
+            <p>
+                A beautiful little surprise<br>
+                made especially for you 💛
+            </p>
+
+            <button id="startBtn">
+                START SURPRISE 💛
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- COUNTDOWN -->
+    <!-- ================================= -->
+
+    <section id="countdownScreen" class="screen hidden">
+
+        <div class="floating-images">
+    <img src="image/photo1.png" class="float-img img1">
+            <img src="image/photo2.png" class="float-img img2">
+            <img src="image/photo3.png" class="float-img img3">
+            <img src="image/photo4.png" class="float-img img4">
+            <img src="image/photo2.png" class="float-img img5">
+            <img src="image/photo1.png" class="float-img img6">
+
+        </div>
+
+
+        <div class="countdown-box">
+
+            <p>
+                💛 Something beautiful is coming...
+            </p>
+
+            <h1>
+                WAIT FOR IT...
+            </h1>
+
+
+            <div class="countdown">
+
+                <div class="time-box">
+
+                    <span id="days">00</span>
+
+                    <small>
+                        DAYS
+                    </small>
+
+                </div>
+
+
+                <div class="time-box">
+
+                    <span id="hours">00</span>
+
+                    <small>
+                        HOURS
+                    </small>
+
+                </div>
+
+
+                <div class="time-box">
+
+                    <span id="minutes">00</span>
+
+                    <small>
+                        MINUTES
+                    </small>
+
+                </div>
+
+
+                <div class="time-box">
+
+                    <span id="seconds">00</span>
+
+                    <small>
+                        SECONDS
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- Last 10 Seconds -->
+
+            <div id="lastSeconds"></div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- BIRTHDAY SCREEN -->
+    <!-- ================================= -->
+
+    <section id="birthdayScreen" class="screen hidden">
+
+
+        <!-- Floating Photos -->
+
+        <div class="floating-images birthday-images">
+    <img src="image/photo1.png" class="float-img img1">
+            <img src="image/photo2.png" class="float-img img2">
+            <img src="image/photo3.png" class="float-img img3">
+            <img src="image/photo4.png" class="float-img img4">
+            <img src="image/photo3.png" class="float-img img5">
+            <img src="image/photo1.png" class="float-img img6">
+
+        </div>
+
+
+        <!-- Birthday Box -->
+
+        <div class="birthday-box">
+
+
+            <div class="birthday-small">
+                ✨ Today is your special day ✨
+            </div>
+
+
+            <h1>
+                HAPPY BIRTHDAY
+            </h1>
+
+
+            <h2>
+                MY BESTIE 💛
+            </h2>
+
+
+            <p class="birthday-message">
+
+                The world became a little more beautiful
+                on the day you were born. 🌼
+
+            </p>
+
+
+
+            <!-- ================================= -->
+            <!-- AGE -->
+            <!-- ================================= -->
+
+            <h3>
+
+                🌎 You have been in this world for...
+
+            </h3>
+
+
+            <div class="age-container">
+
+
+                <div class="age-box">
+
+                    <span id="ageYears">
+                        0
+                    </span>
+
+                    <small>
+                        YEARS
+                    </small>
+
+                </div>
+
+
+                <div class="age-box">
+
+                    <span id="ageMonths">
+                        0
+                    </span>
+
+                    <small>
+                        MONTHS
+                    </small>
+
+                </div>
+
+
+                <div class="age-box">
+
+                    <span id="ageDays">
+                        0
+                    </span>
+
+                    <small>
+                        DAYS
+                    </small>
+
+                </div>
+
+
+                <div class="age-box">
+
+                    <span id="ageHours">
+                        0
+                    </span>
+
+                    <small>
+                        HOURS
+                    </small>
+
+                </div>
+
+
+                <div class="age-box">
+
+                    <span id="ageMinutes">
+                        0
+                    </span>
+
+                    <small>
+                        MINUTES
+                    </small>
+
+                </div>
+
+
+                <div class="age-box">
+
+                    <span id="ageSeconds">
+                        0
+                    </span>
+
+                    <small>
+                        SECONDS
+                    </small>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ================================= -->
+            <!-- TOUCH BUTTON -->
+            <!-- ================================= -->
+
+            <button id="touchBtn">
+                TOUCH ME 💛
+            </button>
+
+
+
+            <!-- ================================= -->
+            <!-- POEM -->
+            <!-- ================================= -->
+
+            <div id="poemBox" class="poem-box hidden">
+
+
+                <div class="poem-decoration">
+                    🌼 💛 ✨ 💛 🌼
+                </div>
+
+
+                <h2>
+                    💛Unexpected person🌸<br>
+                </h2>
+
+
+                <div class="poem">
+
+
+                    <p>
+
+                        Unna naan expect eh pannala,<br>
+
+                        aana nee vandha timing mattum
+                        perfect. 🥺❤️<br>
+
+                        Edhvum plan pannama,<br>
+
+                        slow ah en life-la oru beautiful
+                        part aayita.
+
+                    </p>
+
+
+
+                    <p>
+
+                        Un kooda pesuradhu comfort aachu,<br>
+
+                        un “hi” kooda wait panna
+                        vachiduchu. 🫶<br>
+
+                        Theriyama, nee enakku romba
+                        important aayita.
+
+                    </p>
+
+
+
+                    <p>
+
+                        Future pathi plan pannumbodhu,<br>
+
+                        ippo somehow adhula nee
+                        irukka. 🥺👥
+
+                    </p>
+
+
+
+                    <p>
+
+                        Sila people unexpected ah
+                        varuvaanga,<br>
+
+                        aana heart-la permanent ah
+                        oru place<br>
+
+                        vittu poiduvaanga. ❤️
+
+                    </p>
+
+
+
+                    <p>
+
+                        Maybe nee en life-oda
+                        unexpected chapter...<br>
+
+                        aana indha chapter konjam
+                        special. 🦋🤍
+
+                    </p>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

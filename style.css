@@ -1,0 +1,947 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background: #160f00;
+
+    color: white;
+
+    overflow-x: hidden;
+
+}
+
+
+/* ================================= */
+/* SCREEN */
+/* ================================= */
+
+.screen {
+
+    min-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #8a6500 0%,
+            #382700 35%,
+            #120d00 75%,
+            #050300 100%
+        );
+
+}
+
+
+.hidden {
+
+    display: none !important;
+
+}
+
+
+/* ================================= */
+/* START BOX */
+/* ================================= */
+
+.start-box {
+
+    width: 90%;
+
+    max-width: 500px;
+
+    padding: 50px 30px;
+
+    text-align: center;
+
+    position: relative;
+
+    z-index: 20;
+
+    border-radius: 30px;
+
+    background:
+        rgba(255, 215, 80, 0.10);
+
+    border:
+        1px solid rgba(255, 215, 80, 0.35);
+
+    backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 0 60px rgba(255, 190, 0, 0.25);
+
+}
+
+
+.small-text {
+
+    color: #ffe58a;
+
+    font-size: 17px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.start-box h1 {
+
+    font-size: 45px;
+
+    color: #fff2a8;
+
+    text-shadow:
+        0 0 20px #dcae00;
+
+    margin-bottom: 15px;
+
+}
+
+
+.start-box p {
+
+    color: #fff4c2;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin-bottom: 35px;
+
+}
+
+
+/* ================================= */
+/* BUTTON */
+/* ================================= */
+
+button {
+
+    border: none;
+
+    outline: none;
+
+    padding: 16px 32px;
+
+    border-radius: 50px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    color: #4b3500;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff7a8,
+            #ffd429,
+            #fff0a0
+        );
+
+    box-shadow:
+        0 0 20px rgba(255, 213, 48, 0.5);
+
+    transition: 0.3s;
+
+}
+
+
+button:hover {
+
+    transform: scale(1.08);
+
+    box-shadow:
+        0 0 35px rgba(255, 215, 50, 0.8);
+
+}
+
+
+/* ================================= */
+/* FLOATING IMAGES */
+/* ================================= */
+
+.floating-images {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    pointer-events: none;
+
+    z-index: 3;
+
+}
+
+
+.float-img {
+
+    position: absolute;
+
+    width: 90px;
+
+    height: 90px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    border: 4px solid #fff2a1;
+
+    box-shadow:
+        0 0 20px rgba(255, 210, 50, 0.55);
+
+    opacity: 0.85;
+
+    animation:
+        floating 6s ease-in-out infinite;
+
+}
+
+
+/* Image positions */
+
+.img1 {
+
+    left: 5%;
+
+    top: 15%;
+
+    animation-delay: 0s;
+
+}
+
+
+.img2 {
+
+    right: 7%;
+
+    top: 12%;
+
+    animation-delay: 1s;
+
+}
+
+
+.img3 {
+
+    left: 8%;
+
+    bottom: 15%;
+
+    animation-delay: 2s;
+
+}
+
+
+.img4 {
+
+    right: 8%;
+
+    bottom: 18%;
+
+    animation-delay: 3s;
+
+}
+
+
+.img5 {
+
+    left: 30%;
+
+    top: 8%;
+
+    animation-delay: 4s;
+
+}
+
+
+.img6 {
+
+    right: 30%;
+
+    bottom: 8%;
+
+    animation-delay: 5s;
+
+}
+
+
+@keyframes floating {
+
+    0% {
+
+        transform:
+            translateY(0px)
+            rotate(-5deg);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-25px)
+            rotate(5deg);
+
+    }
+
+    100% {
+
+        transform:
+            translateY(0px)
+            rotate(-5deg);
+
+    }
+
+}
+
+
+/* ================================= */
+/* FLOATING HEARTS */
+/* ================================= */
+
+.hearts span {
+
+    position: absolute;
+
+    z-index: 2;
+
+    bottom: -50px;
+
+    font-size: 28px;
+
+    animation:
+        heartFloat 8s linear infinite;
+
+}
+
+
+.hearts span:nth-child(1) {
+
+    left: 10%;
+
+}
+
+
+.hearts span:nth-child(2) {
+
+    left: 25%;
+
+    animation-delay: 2s;
+
+}
+
+
+.hearts span:nth-child(3) {
+
+    left: 45%;
+
+    animation-delay: 4s;
+
+}
+
+
+.hearts span:nth-child(4) {
+
+    left: 70%;
+
+    animation-delay: 1s;
+
+}
+
+
+.hearts span:nth-child(5) {
+
+    left: 85%;
+
+    animation-delay: 3s;
+
+}
+
+
+.hearts span:nth-child(6) {
+
+    left: 55%;
+
+    animation-delay: 5s;
+
+}
+
+
+@keyframes heartFloat {
+
+    0% {
+
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+        opacity: 0;
+
+    }
+
+    20% {
+
+        opacity: 0.8;
+
+    }
+
+    100% {
+
+        transform:
+            translateY(-110vh)
+            rotate(360deg);
+
+        opacity: 0;
+
+    }
+
+}
+
+
+/* ================================= */
+/* COUNTDOWN */
+/* ================================= */
+
+.countdown-box {
+
+    position: relative;
+
+    z-index: 15;
+
+    text-align: center;
+
+}
+
+
+.countdown-box p {
+
+    color: #ffe58a;
+
+    font-size: 20px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.countdown-box h1 {
+
+    font-size: 48px;
+
+    color: #fff2a6;
+
+    text-shadow:
+        0 0 25px #e6b500;
+
+    margin-bottom: 40px;
+
+}
+
+
+.countdown {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+}
+
+
+.time-box {
+
+    width: 110px;
+
+    height: 120px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255, 213, 50, 0.10);
+
+    border:
+        1px solid rgba(255, 225, 100, 0.3);
+
+    backdrop-filter: blur(10px);
+
+}
+
+
+.time-box span {
+
+    font-size: 42px;
+
+    font-weight: bold;
+
+    color: #fff1a1;
+
+}
+
+
+.time-box small {
+
+    margin-top: 8px;
+
+    color: #f9dda0;
+
+}
+
+
+/* ================================= */
+/* LAST SECONDS */
+/* ================================= */
+
+#lastSeconds {
+
+    font-size: 100px;
+
+    font-weight: bold;
+
+    color: #ffe14d;
+
+    text-shadow:
+        0 0 30px #ffcc00;
+
+    margin-top: 30px;
+
+    animation:
+        pulse 1s infinite;
+
+}
+
+
+@keyframes pulse {
+
+    0% {
+
+        transform: scale(1);
+
+    }
+
+    50% {
+
+        transform: scale(1.2);
+
+    }
+
+    100% {
+
+        transform: scale(1);
+
+    }
+
+}
+
+
+/* ================================= */
+/* BIRTHDAY */
+/* ================================= */
+
+.birthday-box {
+
+    position: relative;
+
+    z-index: 20;
+
+    width: 95%;
+
+    max-width: 900px;
+
+    margin: 30px;
+
+    padding: 45px 25px;
+
+    text-align: center;
+
+    border-radius: 35px;
+
+    background:
+        rgba(70, 45, 0, 0.65);
+
+    border:
+        1px solid rgba(255, 220, 70, 0.35);
+
+    backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 0 70px rgba(255, 205, 30, 0.25);
+
+}
+
+
+/* ================================= */
+/* BIRTHDAY TITLE */
+/* ================================= */
+
+.birthday-small {
+
+    color: #ffe79a;
+
+    font-size: 18px;
+
+}
+
+
+.birthday-box h1 {
+
+    font-size: 58px;
+
+    margin-top: 15px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #fff4a8,
+            #ffd329,
+            #fff8c7
+        );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    text-shadow:
+        0 0 30px rgba(255, 210, 40, 0.4);
+
+}
+
+
+.birthday-box h2 {
+
+    font-size: 34px;
+
+    color: #fff1a3;
+
+    margin: 5px 0 20px;
+
+}
+
+
+.birthday-message {
+
+    color: #fff1c2;
+
+    font-size: 20px;
+
+    line-height: 1.7;
+
+}
+
+
+/* ================================= */
+/* AGE */
+/* ================================= */
+
+.birthday-box h3 {
+
+    color: #ffe89a;
+
+    font-size: 20px;
+
+    font-weight: normal;
+
+    margin-top: 35px;
+
+}
+
+
+.age-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin: 20px 0 30px;
+
+}
+
+
+.age-box {
+
+    width: 100px;
+
+    padding: 15px 5px;
+
+    border-radius: 15px;
+
+    background:
+        rgba(255, 215, 50, 0.10);
+
+    border:
+        1px solid rgba(255, 225, 100, 0.25);
+
+}
+
+
+.age-box span {
+
+    display: block;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    color: #ffe878;
+
+}
+
+
+.age-box small {
+
+    color: #f7dda0;
+
+}
+
+
+/* ================================= */
+/* POEM */
+/* ================================= */
+
+.poem-box {
+
+    margin-top: 35px;
+
+    padding: 35px 25px;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 211, 60, 0.12),
+            rgba(255, 255, 255, 0.05)
+        );
+
+    border:
+        1px solid rgba(255, 220, 80, 0.3);
+
+    animation:
+        poemAppear 1s ease;
+
+}
+
+
+@keyframes poemAppear {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(40px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+.poem-decoration {
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.poem-box h2 {
+
+    color: #ffe98d;
+
+    font-size: 30px;
+
+    line-height: 1.5;
+
+    margin-bottom: 30px;
+
+}
+
+
+.poem {
+
+    text-align: left;
+
+    max-width: 700px;
+
+    margin: auto;
+
+}
+
+
+.poem p {
+
+    color: #fff4d1;
+
+    font-size: 18px;
+
+    line-height: 2;
+
+    margin-bottom: 28px;
+
+}
+
+
+.poem-end {
+
+    color: #ffe47a;
+
+    font-size: 18px;
+
+    margin-top: 20px;
+
+}
+
+
+/* ================================= */
+/* MOBILE */
+/* ================================= */
+
+@media (max-width: 600px) {
+
+
+    .start-box h1 {
+
+        font-size: 32px;
+
+    }
+
+
+    .countdown-box h1 {
+
+        font-size: 32px;
+
+    }
+
+
+    .time-box {
+
+        width: 75px;
+
+        height: 90px;
+
+    }
+
+
+    .time-box span {
+
+        font-size: 28px;
+
+    }
+
+
+    .birthday-box {
+
+        padding: 35px 15px;
+
+        margin: 15px;
+
+    }
+
+
+    .birthday-box h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    .birthday-box h2 {
+
+        font-size: 26px;
+
+    }
+
+
+    .birthday-message {
+
+        font-size: 17px;
+
+    }
+
+
+    .age-box {
+
+        width: 78px;
+
+    }
+
+
+    .float-img {
+
+        width: 65px;
+
+        height: 65px;
+
+    }
+
+
+    .poem-box {
+
+        padding: 25px 18px;
+
+    }
+
+
+    .poem-box h2 {
+
+        font-size: 24px;
+
+    }
+
+
+    .poem p {
+
+        font-size: 16px;
+
+        line-height: 1.9;
+
+    }
+
+}
